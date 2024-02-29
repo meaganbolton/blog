@@ -3,7 +3,7 @@ layout: post
 title:  "Navigating the Data Mines"
 author: Meagan Bolton
 description: A Holistic Approach to Data Mining with Python.
-image: "/assets/images/image5.jpg"
+image: "/assets/images/introPicture.jpg"
 ---
 ## Introduction:
 Welcome to the captivating world of data mining! In today's digital age, being able to find valuable information from
