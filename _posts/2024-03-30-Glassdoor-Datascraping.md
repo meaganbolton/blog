@@ -5,7 +5,7 @@ author: Meagan Bolton
 description: "In today's digital era, data science stands at the forefront of innovation, driving decisions and shaping industries. 
 In this blog post, I share my journey of curating a comprehensive dataset on data science job postings using web scraping 
 techniques and delve into the process of extracting valuable insights."
-image: "/assets/images/introPicture.jpg"
+image: "/assets/images/NY data screenshot.png"
 ---
 
 ## Introduction
@@ -97,6 +97,15 @@ search_input.send_keys('data science')
 location_input = driver.find_element_by_id('searchBar-location')
 location_input.send_keys('New York, NY')
 ```
+## Crafting the Dataset
+Data Source: Leveraging web scraping techniques, I collected job postings from Glassdoor, a leading platform for career 
+insights and employer reviews. By targeting key locations such as New York, NY; Houston, TX; San Francisco, CA; Seattle, WA; 
+Chicago, IL; and Raleigh, NC, I aimed to capture regional variations in data science job offerings.
+
+Data Collection Process: Using Python's Selenium library, I automated the process of navigating through Glassdoor's job 
+search interface, systematically retrieving job titles, company names, locations, salaries, and employer ratings. Each 
+job posting served as a valuable data point, contributing to the richness of the dataset.
+
 ## Step 4: Scrape Job Listings
 Once you get to the page with the job listings you are interested in it's time to scrape!
 
@@ -117,15 +126,7 @@ for job in jobs:
 There is a lot of information that you can find on Glassdoor so feel free to take as much as you'd like. Keep in mind that
 some of this information might not be quite ready to be used.
 
-![Alt Text](assets/images/NY data screenshot.png)
-## Crafting the Dataset
-Data Source: Leveraging web scraping techniques, I collected job postings from Glassdoor, a leading platform for career 
-insights and employer reviews. By targeting key locations such as New York, NY; Houston, TX; San Francisco, CA; Seattle, WA; 
-Chicago, IL; and Raleigh, NC, I aimed to capture regional variations in data science job offerings.
-
-Data Collection Process: Using Python's Selenium library, I automated the process of navigating through Glassdoor's job 
-search interface, systematically retrieving job titles, company names, locations, salaries, and employer ratings. Each 
-job posting served as a valuable data point, contributing to the richness of the dataset.
+![The Data Immediately After Being Scraped](../../assets/images/NY data screenshot.png)
 
 ## Preparing the Dataset
 Cleaning and Augmentation: Upon gathering the raw data, I employed various data preprocessing techniques to enhance its 
@@ -136,15 +137,6 @@ Feature Engineering: To enrich the dataset further, I introduced a new feature, 
 on their frequency (hourly or yearly). This transformation not only facilitates comparative analysis but also offers 
 valuable insights into prevailing compensation structures across different job markets.
 
-## Exploratory Data Analysis (EDA)
-Unveiling Patterns: Armed with a refined dataset, I delved into exploratory data analysis to uncover underlying patterns and 
-trends within the data science job market. Through visualizations and statistical summaries, I elucidated factors such as 
-salary distributions, regional variations, and the relationship between employer ratings and compensation.
-
-Key Findings: The EDA revealed intriguing insights, including disparities in salary ranges across cities, the prevalence of 
-hourly vs. yearly pay rates, and correlations between employer ratings and offered salaries. These findings serve as a 
-testament to the multifaceted nature of the data science job landscape and offer valuable guidance to job seekers and 
-employers alike.
 
 ## Conclusion
 In this blog post, I've provided a glimpse into the process of curating and analyzing a comprehensive dataset on data science 
