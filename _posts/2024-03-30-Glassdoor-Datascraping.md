@@ -5,7 +5,7 @@ author: Meagan Bolton
 description: "In today's digital era, data science stands at the forefront of innovation, driving decisions and shaping industries. 
 In this blog post, I share my journey of curating a comprehensive dataset on data science job postings using web scraping 
 techniques and delve into the process of extracting valuable insights."
-image: "/assets/images/money.png"
+image: "/assets/images/money.jpg"
 ---
 
 ## Introduction
