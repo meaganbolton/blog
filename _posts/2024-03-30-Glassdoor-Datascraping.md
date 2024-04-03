@@ -5,7 +5,7 @@ author: Meagan Bolton
 description: "In today's digital era, data science stands at the forefront of innovation, driving decisions and shaping industries. 
 In this blog post, I share my journey of curating a comprehensive dataset on data science job postings using web scraping 
 techniques and delve into the process of extracting valuable insights."
-image: "/assets/images/NY data screenshot.png"
+image: "/assets/images/money.png"
 ---
 
 ## Introduction
@@ -13,7 +13,7 @@ As I've started to apply for jobs in the data science world I find myself giddy 
 and opportunities not to mention the massive pay increase from my current on-campus job. This surge of excitement has spurred 
 me to ponder various questions: What salary range should I anticipate?
 Which companies and locations boast the most enticing offers? Is there a correlation between the ratings of companies and the 
-salaries they offer? In pursuit of answers, I embarked on a journey to scrape job listings data from Glassdoor.
+salaries they offer? In pursuit of answers, I embarked on a journey to scrape job listings data from Glassdoor. I used <a href = "https://data-ox.com/how-to-scrape-glassdoor" target="_blank">this article</a> for guidance throughout this process.
 
 ## Step 1: Initialize Chrome WebDriver
 Before we begin, make sure you have the following installed:
@@ -126,7 +126,9 @@ for job in jobs:
 There is a lot of information that you can find on Glassdoor so feel free to take as much as you'd like. Keep in mind that
 some of this information might not be quite ready to be used.
 
-![The Data Immediately After Being Scraped](../../assets/images/NY data screenshot.png)
+![The Data Immediately After Being Scraped](/assets/images/NY data screenshot.png)
+
+Here you can see (if the image is working, but it feels unlikely so imagine it) that though we got the salary there's not much we can do with it because it's not only numerical values.
 
 ## Preparing the Dataset
 Cleaning and Augmentation: Upon gathering the raw data, I employed various data preprocessing techniques to enhance its 
@@ -139,10 +141,6 @@ valuable insights into prevailing compensation structures across different job m
 
 
 ## Conclusion
-In this blog post, I've provided a glimpse into the process of curating and analyzing a comprehensive dataset on data science 
-job postings. By leveraging web scraping techniques and employing data preprocessing methods, I've uncovered valuable insights 
-into the evolving dynamics of the job market. Moving forward, I'm excited to delve deeper into the data, unraveling more 
-nuanced trends and fostering a deeper understanding of the intricate interplay between talent acquisition and industry demands.
+In this blog post, I've provided a glimpse into the process of curating and analyzing a comprehensive dataset on data science job postings. By leveraging web scraping techniques and employing data preprocessing methods, I've uncovered valuable insights into the evolving dynamics of the job market. Moving forward, I'm excited to delve deeper into the data, unraveling more nuanced trends and fostering a deeper understanding of the intricate interplay between talent acquisition and industry demands.
 
-For access to the complete dataset and code repository, please visit GitHub. If you have any questions, insights, or 
-suggestions for future analyses, feel free to share them in the comments below!
+For access to the complete dataset and code repository, please visit GitHub. <a href = "https://github.com/meaganbolton/-Unveiling-Insights-Exploring-Data-Science-Job-Market-Dynamics.git" target="_blank">Click here for the Github Repo!</a>
