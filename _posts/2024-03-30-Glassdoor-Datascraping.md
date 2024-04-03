@@ -126,7 +126,7 @@ for job in jobs:
 There is a lot of information that you can find on Glassdoor so feel free to take as much as you'd like. Keep in mind that
 some of this information might not be quite ready to be used.
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/NY data screenshot.png" alt=""/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/NY_data_screenshot.png" alt=""/>
 
 Here you can see (if the image is working, but it feels unlikely so imagine it) that though we got the salary there's not much we can do with it because it's not only numerical values.
 
