@@ -117,7 +117,7 @@ for job in jobs:
 There is a lot of information that you can find on Glassdoor so feel free to take as much as you'd like. Keep in mind that
 some of this information might not be quite ready to be used.
 
-![Alt Text](assets/images/NY data screenshot.png)
+![Alt Text](/assets/images/NY data screenshot.png)
 ## Crafting the Dataset
 Data Source: Leveraging web scraping techniques, I collected job postings from Glassdoor, a leading platform for career 
 insights and employer reviews. By targeting key locations such as New York, NY; Houston, TX; San Francisco, CA; Seattle, WA; 
