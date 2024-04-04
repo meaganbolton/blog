@@ -40,12 +40,14 @@ far less work to log onto Glassdoor and create an account before we begin trying
 
 Now we are ready to really start coding!
 1. You want to get the URL to the GlassDoor login page.
+
 ```{python}
 # Load Glassdoor login page
 driver.get('https://www.glassdoor.com/profile/login_input.htm')
 ```
 2. On the first page it only requires you to enter your email and click the next button. (Note: the generic email "youremail@gmail.com" is used but
 you'll want to replace that with your own email)
+
    ```{python}
    # Enter email
    email_input_field = driver.find_element_by_class_name('email-input').find_element_by_tag_name('input')
@@ -57,6 +59,7 @@ you'll want to replace that with your own email)
    ```
 3. On the next page you will be required to enter in your password to move forwards. (Again a generic password is used and will
    need to be replaced)
+   
    ```{python}
    # Enter password
    password_input = driver.find_element_by_id('inlineUserPassword')
@@ -66,6 +69,7 @@ you'll want to replace that with your own email)
    continue_with_signin_button = driver.find_element_by_class_name('emailButton')
    continue_with_signin_button.click()
    ```
+   
 4. Making your email and password Github ready. If you plan don't plan on posting your code to GitHub you are free to skip this
    step, however, if you do want to post this and don't want to give out your Glassdoor login information this step is for you.
    - Save your email and password in text files. Mine are called email.txt and password.txt.
