@@ -46,26 +46,26 @@ driver.get('https://www.glassdoor.com/profile/login_input.htm')
 ```
 2. On the first page it only requires you to enter your email and click the next button. (Note: the generic email "youremail@gmail.com" is used but
 you'll want to replace that with your own email)
-```{python}
-# Enter email
-email_input_field = driver.find_element_by_class_name('email-input').find_element_by_tag_name('input')
-email_input_field.send_keys(youremail@gmail.com)
-
-# Click 'Continue with Email' button
-continue_with_email_button = driver.find_element_by_class_name('emailButton')
-continue_with_email_button.click()
-```
+   ```{python}
+   # Enter email
+   email_input_field = driver.find_element_by_class_name('email-input').find_element_by_tag_name('input')
+   email_input_field.send_keys(youremail@gmail.com)
+   
+   # Click 'Continue with Email' button
+   continue_with_email_button = driver.find_element_by_class_name('emailButton')
+   continue_with_email_button.click()
+   ```
 3. On the next page you will be required to enter in your password to move forwards. (Again a generic password is used and will
    need to be replaced)
-```{python}
-# Enter password
-password_input = driver.find_element_by_id('inlineUserPassword')
-password_input.send_keys(your_password)
-
-# Click 'Sign in' button
-continue_with_signin_button = driver.find_element_by_class_name('emailButton')
-continue_with_signin_button.click()
-```
+   ```{python}
+   # Enter password
+   password_input = driver.find_element_by_id('inlineUserPassword')
+   password_input.send_keys(your_password)
+   
+   # Click 'Sign in' button
+   continue_with_signin_button = driver.find_element_by_class_name('emailButton')
+   continue_with_signin_button.click()
+   ```
 4. Making your email and password Github ready. If you plan don't plan on posting your code to GitHub you are free to skip this
    step, however, if you do want to post this and don't want to give out your Glassdoor login information this step is for you.
    - Save your email and password in text files. Mine are called email.txt and password.txt.
@@ -128,7 +128,7 @@ some of this information might not be quite ready to be used.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/NY_data_screenshot.png" alt=""/>
 
-Here you can see (if the image is working, but it feels unlikely so imagine it) that though we got the salary there's not much we can do with it because it's not only numerical values.
+Here you can see that though we got the salary there's not much we can do with it because it's not only numerical values.
 
 ## Preparing the Dataset
 Cleaning and Augmentation: Upon gathering the raw data, I employed various data preprocessing techniques to enhance its 
